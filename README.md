@@ -3,13 +3,14 @@
 A walkthrough of some of the 1 star "Trivial Challenges" and 2 star "Easy Challenges" for the super vulnerable OWASP Juice Shop web application.
 
 ### Resources
+* [Juice Shop Website](https://kapolei-hs-juice-shop.herokuapp.com)
 * [Challenge Hunting - OWASP Official Hacking Guide](https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/)
 
 
 ### Challenges
 1. **Find the score board**
     * Since we know the page exists, we can simply guess what the URL will be
-    * `https://khs-juice-shop.herokuapp.com/#/score-board`
+    * `https://kapolei-juice-shop.herokuapp.com/#/score-board`
 2. **Find the admin page**
     * Open the developer tools -> Source tab
     * Inspect the `main.js` file
@@ -17,9 +18,9 @@ A walkthrough of some of the 1 star "Trivial Challenges" and 2 star "Easy Challe
     * ![juice-shop-administration-route](img/juice-shop-administration.png)
 3. **Access a confidential document**
     * Click through different links on the website
-    * A link in the `About Us` page takes us to `https://khs-juice-shop.herokuapp.com/ftp/legal.md?md_debug=true`
+    * A link in the `About Us` page takes us to `https://kapolei-hs-juice-shop.herokuapp.com/ftp/legal.md?md_debug=true`
     * Notice the `/ftp` part of the URL
-    * The ftp server is not secured and we can access a confidential file at `https://khs-juice-shop.herokuapp.com/ftp/acquisitions.md`
+    * The ftp server is not secured and we can access a confidential file at `https://kapolei-hs-juice-shop.herokuapp.com/ftp/acquisitions.md`
 4. **XSS Tier 0**
     * This challenge asks you to inject code into the URI of the page so that it will be reflected back to you.
     * Navigate to the order tracking page
@@ -33,5 +34,5 @@ A walkthrough of some of the 1 star "Trivial Challenges" and 2 star "Easy Challe
     * Delete all of the 5 star reviews
 7. **Security Policy**
     * Check to see how to report any bugs on the website
-    * Use this URL - `https://khs-juice-shop.herokuapp.com/security.txt`
+    * Use this URL - `https://kapolei-hs-juice-shop.herokuapp.com/security.txt`
     * Adding `security.txt` to most websites will give you the proper way to report any security vulnerabilities to a company
