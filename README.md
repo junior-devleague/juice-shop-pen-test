@@ -1,6 +1,6 @@
 # Juice Shop Hacking Guide
 
-A walkthrough of the 1 star "Trivial Challenges" for the super vulnerable OWASP Juice Shop web application.
+A walkthrough of some of the 1 star "Trivial Challenges" and 2 star "Easy Challenges" for the super vulnerable OWASP Juice Shop web application.
 
 ### Resources
 * [Challenge Hunting - OWASP Official Hacking Guide](https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/)
@@ -28,3 +28,10 @@ A walkthrough of the 1 star "Trivial Challenges" for the super vulnerable OWASP 
     * This challenge asks you to inject code into the DOM - Document Object Model
     * Look for places that you could potentially insert malicious code. (i.e. the search bar)
     * Insert `<iframe src="javascript:alert('xss')">` to solve this challenge
+6. **Five Star Feedback**
+    * Access the administration page
+    * Delete all of the 5 star reviews
+7. **Security Policy**
+    * Check to see how to report any bugs on the website
+    * Use this URL - `https://khs-juice-shop.herokuapp.com/security.txt`
+    * Adding `security.txt` to most websites will give you the proper way to report any security vulnerabilities to a company
