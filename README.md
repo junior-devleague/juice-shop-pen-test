@@ -5,6 +5,7 @@ A walkthrough of some of the 1 star "Trivial Challenges" and 2 star "Easy Challe
 ### Resources
 * [Juice Shop Website](https://kapolei-hs-juice-shop.herokuapp.com)
 * [Challenge Hunting - OWASP Official Hacking Guide](https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/)
+* [Deploy Your Own Juice Shop](https://github.com/bkimminich/juice-shop)
 
 
 ### Challenges
